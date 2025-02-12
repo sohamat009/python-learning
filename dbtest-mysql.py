@@ -17,6 +17,7 @@ try:
         print("Databases on the server:")
         for row in result:
             print(row[0])
-
+            print("4")
 except Exception as e:
     print(f"An error occurred: {e}")
+    print("5")

@@ -7,10 +7,10 @@ def connect_to_db():
     try:
         print("o.1")
         connection = mysql.connector.connect(
-            host="localhost",        # Change as per your configuration
-            user="soham",    # Replace with your MySQL username
-            password="soham", # Replace with your MySQL password
-            database="soham" # Replace with your database name
+            host="localhost",       
+            user="soham",   
+            password="soham", 
+            database="soham" 
         )
         print("1.0")
         return connection
