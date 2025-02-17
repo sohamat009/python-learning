@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
 
 
-from flask import Flask
+"""from flask import Flask
 app = Flask(__name__)
 
 @app.route('/blog/<int:postID>')
@@ -22,4 +22,12 @@ def revision(revNo):
    return 'Revision Number %f' % revNo
 
 if __name__ == '__main__':
-   app.run(debug = True)
+   app.run(debug = True)"""
+
+from flask import Flask, redirect, url_for
+app = Flask(__name__)
+
+@app.route('/admin')
+def hellow_admin():
+   return 'Hellow Admin'
+
